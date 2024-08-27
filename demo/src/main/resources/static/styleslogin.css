@@ -16,6 +16,48 @@ body {
         justify-content: center;
 }
 
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8e582c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+header .menu img {
+    height: 30px;
+}
+
+.nav-links {
+    margin-left: auto; /* Alinha os links à direita */
+    display: flex;
+    gap: 100px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: white; /* Ajuste a cor conforme necessário */
+    font-weight: bold;
+}
+
 .container {
 
     width: 420px;
@@ -24,6 +66,11 @@ body {
     backdrop-filter: blur(20px);
     border-radius: 10px;
     padding: 30px 40px;
+    margin: 100px auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
