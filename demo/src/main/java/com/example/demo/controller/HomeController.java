@@ -50,5 +50,10 @@ public class HomeController {
 	public String arquivos() {
 		return "arquivos";
 	}
+
+	@GetMapping("/perfil2")
+	public String perfil2(){
+		return "perfil2";
+	}
 	
 }
