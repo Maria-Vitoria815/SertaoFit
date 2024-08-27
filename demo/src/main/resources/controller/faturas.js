@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const invoicesData = [
-        { month: 'Janeiro', year: 2024, status: 'Pago', amount: 150.00, file: '/boletos/JoseGomes/2024/janeiro.pdf' },
-        { month: 'Fevereiro', year: 2024, status: 'Pendente', amount: 150.00, file: 'boletos/JoseGomes/2024/fevereiro.pdf' },
+        { month: 'Janeiro', year: 2024, status: 'Pago', amount: 150.00, file: '../static/boletos/JoseGomes/2024/janeiro.pdf' },
+        { month: 'Fevereiro', year: 2024, status: 'Pendente', amount: 150.00, file: '../static/boletos/JoseGomes/2024/fevereiro.pdf' },
         // Adicione mais faturas aqui
     ];
 

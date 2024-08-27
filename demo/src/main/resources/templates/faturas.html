@@ -7,26 +7,32 @@
     <link rel="stylesheet" href="../static/stylesFaturas.css">
 </head>
 <body>
+    <header>
+        <h1>SertãoFit</h1>
+    </header>
+
     <div class="container">
-        <h1>Faturas de José Gomes</h1>
+        <div class="user-name">José Gomes</div>
 
-        <div class="filters">
-            <label for="yearFilter">Filtrar por ano:</label>
-            <select id="yearFilter" onchange="filterByYear()">
-                <option value="2024">2024</option>
-                <!-- Adicione mais anos conforme necessário -->
-            </select>
+        <div class="year-section">
+            <div class="year-title">2024</div>
+            <ul class="invoice-list">
+                <li>
+                    <span>Janeiro</span>
+                    <span class="status paid">Pago</span>
+                    <a href="../static/boletos/JoseGomes/2024/janeiro.pdf" class="download-btn">Baixar</a>
+                </li>
+                <li>
+                    <span>Fevereiro</span>
+                    <span class="status pending">Em Aguardo</span>
+                    <a href="../static/boletos/JoseGomes/2024/fevereiro.pdf" class="download-btn">Baixar</a>
+                </li>
+                <!-- Adicione mais faturas conforme necessário -->
+            </ul>
         </div>
-
-        <div id="invoices">
-            <!-- Os botões de faturas serão inseridos aqui -->
-        </div>
-
-        <div id="summary">
-            <h2>Total Pago: R$ <span id="totalPaid">0,00</span></h2>
-        </div>
+        <!-- Repita a seção year-section para outros anos, se necessário -->
     </div>
 
-    <script src="../controller/faturas.js"></script>
+  
 </body>
 </html>
