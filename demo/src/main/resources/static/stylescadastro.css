@@ -6,23 +6,72 @@
 }
 
 body {
-    background: url(../imagens/sertaofit.png);
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center center;
-    min-height: 100vh;
+        background: url("../imagens/sertaofit.png");
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center center;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8e582c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    z-index: 1000;
+}
+
+header .logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+header .logo img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+header .menu img {
+    height: 30px;
+}
+
+.nav-links {
+    margin-left: auto; /* Alinha os links à direita */
+    display: flex;
+    gap: 100px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: white; /* Ajuste a cor conforme necessário */
+    font-weight: bold;
 }
 
 .container {
+
     width: 420px;
     background: transparent;
     border: 2px solid rgb(110, 110, 110);
     backdrop-filter: blur(20px);
     border-radius: 10px;
     padding: 30px 40px;
+    margin: 100px auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 h1 {
@@ -31,37 +80,52 @@ h1 {
     color: beige;
 }
 
-.input-container {
+.input-container{
     position: relative;
-    width: 100%;
-    height: 50px;
-    margin-bottom: 20px;
+    width: 200px;
+    height: 30px;
+    margin: 50px;
 }
 
-.input-container input {
+.input-container input{
+
     width: 100%;
     height: 100%;
     background: transparent;
     border: none;
     outline: none;
     border: 2px solid whitesmoke;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     color: antiquewhite;
-    padding: 20px 45px 20px 20px;
+    padding: 20px 45px 20px 20px ;
 }
 
-.input-container input::placeholder {
+.input-container input::placeholder{
     color: antiquewhite;
 }
 
 .input-container img {
     position: absolute;
     right: 24px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-top: 5px;
+    top: 20%;
 }
 
-.submit-button {
+.input-container a{
+    color: aliceblue;
+    margin-top: 2px;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 0 0 20px;
+}
+
+.input-container a:hover{
+    text-decoration: underline;
+}
+
+.submit-button{
     width: 100%;
     height: 50px;
     background-color: rgb(105, 167, 26);
@@ -72,30 +136,32 @@ h1 {
     cursor: pointer;
     outline: none;
     font-size: 16px;
+
 }
 
-.submit-button:hover {
+.submit-button:hover{
     background-color: rgba(145, 248, 48, 0.705);
 }
 
-.login-link {
+.cadastro {
     text-align: center;
-    margin-top: 20px;
+    margin:20px 0 ;
 }
 
-.login-link p {
+.cadastro p{
     font-size: 16px;
     color: aliceblue;
+    font-weight: 300;
 }
 
-.login-link a {
+.cadastro a{
     font-size: 16px;
     color: aliceblue;
     font-weight: 500;
     text-decoration: none;
 }
 
-.login-link a:hover {
+.cadastro a:hover{
     color: yellowgreen;
     text-decoration: underline;
 }
