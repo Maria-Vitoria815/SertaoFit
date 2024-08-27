@@ -16,9 +16,9 @@ public class HomeController {
 		return "home";
 	}
 	
-	@GetMapping("/entrar")
-	public String entrar() {
-		return "entrar";
+	@GetMapping("/login")
+	public String login() {
+		return "login";
 	}
 	
 	@GetMapping("/cadastro")
