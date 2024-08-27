@@ -84,7 +84,7 @@
             align-items: center;
             padding: 60px;
             position: relative;
-            margin-top: -15vh; /* Ajuste para que o quadrado branco esteja sobre a barra marrom */
+            margin-top: 0vh; /* Ajuste para que o quadrado branco esteja sobre a barra marrom */
             z-index: 1;
             flex: 1; /* Faz com que o container expanda para preencher o espaço restante */
         }
