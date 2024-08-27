@@ -79,11 +79,11 @@ header .back-button {
 }
 
 .invoice-list li .status.paid {
-    color: #28a745;
+    color: #7e7b7b;
 }
 
 .invoice-list li .status.pending {
-    color: #ffc107;
+    color: #7e7b7b;
 }
 
 .download-btn {
