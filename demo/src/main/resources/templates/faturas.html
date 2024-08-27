@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faturas - SertãoFit</title>
+    <link rel="stylesheet" href="../static/stylesFaturas.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Faturas de José Gomes</h1>
+
+        <div class="filters">
+            <label for="yearFilter">Filtrar por ano:</label>
+            <select id="yearFilter" onchange="filterByYear()">
+                <option value="2024">2024</option>
+                <!-- Adicione mais anos conforme necessário -->
+            </select>
+        </div>
+
+        <div id="invoices">
+            <!-- Os botões de faturas serão inseridos aqui -->
+        </div>
+
+        <div id="summary">
+            <h2>Total Pago: R$ <span id="totalPaid">0,00</span></h2>
+        </div>
+    </div>
+
+    <script src="../controller/faturas.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #6A4A3C;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+#invoices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.invoice-button {
+    background-color: #6A4A3C;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.invoice-button:hover {
+    background-color: #875C4B;
+}
+
+.status {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+#summary {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #6A4A3C;
+}
