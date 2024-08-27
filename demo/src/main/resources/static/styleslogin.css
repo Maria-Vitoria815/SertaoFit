@@ -16,6 +16,43 @@ body {
         justify-content: center;
 }
 
+
+header {
+    background-color: #8e582c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+header .menu img {
+    height: 30px;
+}
+
+.nav-links {
+    margin-left: auto; /* Alinha os links à direita */
+    display: flex;
+    gap: 100px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: white; /* Ajuste a cor conforme necessário */
+    font-weight: bold;
+}
+
 .container {
 
     width: 420px;
