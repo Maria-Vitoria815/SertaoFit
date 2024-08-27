@@ -1,34 +1,43 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8f8;
+    background-color: #f8f8f8;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: rgb(105, 167, 26);
+    background-color: #8a5c2c;
     padding: 15px;
     text-align: center;
+    position: relative;
 }
 
-header h1, footer p {
+header h1 {
     margin: 0;
     color: #fff;
 }
 
+header .back-button {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-decoration: none;
+}
 
 .container {
-    max-width: 800px;
-    margin: 30px auto;
+    max-width: 600px;
+    margin: 50px auto;
     padding: 20px;
-    background-color: rgba(102, 205, 170, 0.3);
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .user-name {
-    text-align: center;
     font-size: 1.5em;
     margin-bottom: 20px;
 }
@@ -40,7 +49,8 @@ header h1, footer p {
 .year-title {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color: #2e8b57;
+    color: #8a5c2c;
+    font-weight: bold;
 }
 
 .invoice-list {
@@ -52,15 +62,15 @@ header h1, footer p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #fff;
+    padding: 15px;
+    background-color: #f4f4f4;
     margin-bottom: 8px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .invoice-list li span {
     flex-grow: 1;
+    text-align: left;
 }
 
 .invoice-list li .status {
@@ -69,17 +79,17 @@ header h1, footer p {
 }
 
 .invoice-list li .status.paid {
-    color: #2e8b57;
+    color: #28a745;
 }
 
 .invoice-list li .status.pending {
-    color: #ff8c00;
+    color: #ffc107;
 }
 
 .download-btn {
-    background-color: rgb(105, 167, 26);
+    background-color: #8a5c2c;
     color: #fff;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -87,5 +97,12 @@ header h1, footer p {
 }
 
 .download-btn:hover {
-    background-color: #cdd8d3;
+    background-color: #6e471f;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+    color: #aaa;
 }
