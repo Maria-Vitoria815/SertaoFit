@@ -72,9 +72,15 @@ public class LoginController {
         ModelAndView mav = new ModelAndView();
 
         // Validação simples das credenciais
-        if ("emily@gmail.com".equals(usuario) && "123".equals(senha)) {
-            mav.setViewName("home");  // Se as credenciais estão corretas, redireciona para a home
-        } else {
+        if ("josegomes@gmail.com".equals(usuario) && "123".equals(senha)) {
+            mav.setViewName("perfil");  // Se as credenciais estão corretas, redireciona para o perfil
+        } 
+        
+        else if("emily@gmail.com".equals(usuario) && "123".equals(senha)) {
+            mav.setViewName("perfil2");  // Se as credenciais estão corretas, redireciona para o perfil2
+        } 
+
+        else {
             mav.setViewName("login");  // Se as credenciais estão incorretas, retorna à página de login
             mav.addObject("errorMessage", "Credenciais inválidas. Tente novamente.");
         }
