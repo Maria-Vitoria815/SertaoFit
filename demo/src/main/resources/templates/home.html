@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SertãoFit</title>
+    <title>Home - SertãoFit</title>
     <link rel="icon" type="image/png" sizes="32x32" href="../icons/flavicon.png">
-    <link rel="stylesheet" href="../static/stylesEmy.css">    
+    <link rel="stylesheet" th:href="@{/stylesEmy.css}"> <!-- Ajuste usando Thymeleaf -->
 </head>
 
 <body class="home">
@@ -15,20 +15,25 @@
             <h1>SertãoFit</h1>
         </div>
 
-
         <div class="nav-links">
-            <a href="home.html">Home</a>
-            <a href="planos.html">Planos</a>
-            <a href="quemSomos.html">Quem Somos</a>
-            <a href="login.html">Entrar</a>
+            <a href="/home">Home</a>
+            <a href="/planos">Planos</a>
+            <a href="/quemSomos">Quem Somos</a>
+            <a href="/login">Entrar</a>
         </div>
-
     </header>
 
-    <div class="descricao"><p style="font-size: 150%;"><br>SertãoFit – Uma academia que une tradição e modernidade para proporcionar a melhor experiência de fitness e bem-estar. Localizada na charmosa cidade de Paulo Afonso, a SertãoFit se destaca não apenas pela sua infraestrutura de ponta, mas também pelo compromisso em transformar a vida de seus membros.</p>
+    <div class="descricao">
+        <p style="font-size: 150%;">
+            SertãoFit – Uma academia que une tradição e modernidade para proporcionar a melhor experiência de fitness e bem-estar.
+            Localizada na charmosa cidade de Paulo Afonso, a SertãoFit se destaca não apenas pela sua infraestrutura de ponta,
+            mas também pelo compromisso em transformar a vida de seus membros.
+        </p>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <div class="cadastre"><a href="cadastro.html" style="text-decoration: none; color: white; font-size: 30px;">CADASTRE-SE</a></div>
+
+    <div class="cadastre">
+        <a href="/cadastro" style="text-decoration: none; color: white; font-size: 30px;">CADASTRE-SE</a>
+    </div>
     
     <footer>
         <p>&copy; 2024 SertãoFit. Todos os direitos reservados.</p>

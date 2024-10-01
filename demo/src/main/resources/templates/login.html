@@ -2,42 +2,49 @@
 <html lang="pt-br">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Login</title>
+    <!-- Referência correta para arquivos estáticos no Spring Boot usando Thymeleaf -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styleslogin.css">
-    <title>Tela Login</title>
+    <!-- Usando Thymeleaf para referenciar o CSS -->
+    <link rel="stylesheet" th:href="@{/styleslogin.css}">
 </head>
 
 <body>
     
     <header>
         <div class="logo">
-            <img src="../icons/cactus.png" alt="SertãoFit Logo">
+            <img src="/icons/cactus.png" alt="SertãoFit Logo">
             <h1>SertãoFit</h1>
         </div>
         <div class="nav-links">
-            <a href="home.html">Home</a>
-            <a href="planos.html">Planos</a>
-            <a href="quemSomos.html">Quem Somos</a>
-            <a href="login.html">Entrar</a>
+            <a href="/home">Home</a>
+            <a href="/planos">Planos</a>
+            <a href="/quemSomos">Quem Somos</a>
+            <a href="/login">Entrar</a>
         </div>
     </header>
 
     <div class="container">
-        <form>
+        <form action="/process_login" method="post">
             <h1>Entrar na Plataforma</h1>
             <div class="input-container">
-                <input placeholder="Email" type="email" required>
+                <input placeholder="Email" type="email" name="usuario" required>
                 <img width="20" height="20" src="https://img.icons8.com/fluency-systems-filled/48/000000/user.png" alt="user" />
             </div>
 
             <div class="input-container">
-                <input placeholder="Senha" type="password" required>
+                <input placeholder="Senha" type="password" name="senha" required>
                 <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/000000/lock-2.png" alt="lock-2" />
                 <a href="#">Esqueci minha senha</a>
+            </div>
+
+            <!-- Exibe a mensagem de erro, se existir -->
+            <div class="error-message">
+                <p th:text="${errorMessage}" style="color:red;"></p>
             </div>
 
             <button type="submit" class="submit-button">Entrar</button>
@@ -45,13 +52,9 @@
 
         <div class="cadastro">
             <p>Não tem um cadastro? </p>
-            <a href="cadastro.html"> Realize agora! </a>
+            <a href="/cadastro"> Realize agora! </a>
         </div>
-
     </div>
-     
-    <!-- Referência ao arquivo JavaScript -->
-    <script src="../controller/login.js"></script>
 
 </body>
 
