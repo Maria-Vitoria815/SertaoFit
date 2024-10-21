@@ -5,16 +5,19 @@
     box-sizing: border-box;
 }
 
+
 body {
         background: url("../imagens/sertaofit.png");
-        background-size: cover; 
-        background-repeat: no-repeat; 
+        background-size: cover;
+        background-repeat: no-repeat;
         background-position: center center;
         min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
 }
+
+
 
 
 header {
@@ -31,19 +34,23 @@ header {
     z-index: 1000;
 }
 
+
 header .logo {
     display: flex;
     align-items: center;
 }
+
 
 header .logo img {
     height: 60px;
     margin-right: 10px;
 }
 
+
 header .menu img {
     height: 30px;
 }
+
 
 .nav-links {
     margin-left: auto; /* Alinha os links à direita */
@@ -52,13 +59,17 @@ header .menu img {
 }
 
 
+
+
 .nav-links a {
     text-decoration: none;
     color: white; /* Ajuste a cor conforme necessário */
     font-weight: bold;
 }
 
+
 .container {
+
 
     width: 420px;
     background: transparent;
@@ -72,13 +83,16 @@ header .menu img {
     align-items: center;
     justify-content: center;
 
+
 }
+
 
 h1 {
     text-align: center;
     font-size: 36px;
     color: beige;
 }
+
 
 .input-container{
     position: relative;
@@ -87,7 +101,9 @@ h1 {
     margin: 50px;
 }
 
+
 .input-container input{
+
 
     width: 100%;
     height: 100%;
@@ -102,9 +118,11 @@ h1 {
     padding: 20px 45px 20px 20px ;
 }
 
+
 .input-container input::placeholder{
     color: antiquewhite;
 }
+
 
 .input-container img {
     position: absolute;
@@ -112,6 +130,7 @@ h1 {
     margin-top: 5px;
     top: 20%;
 }
+
 
 .input-container a{
     color: aliceblue;
@@ -121,9 +140,11 @@ h1 {
     padding: 0 0 0 20px;
 }
 
+
 .input-container a:hover{
     text-decoration: underline;
 }
+
 
 .submit-button{
     width: 100%;
@@ -137,16 +158,20 @@ h1 {
     outline: none;
     font-size: 16px;
 
+
 }
+
 
 .submit-button:hover{
     background-color: rgba(145, 248, 48, 0.705);
 }
 
+
 .cadastro {
     text-align: center;
     margin:20px 0 ;
 }
+
 
 .cadastro p{
     font-size: 16px;
@@ -154,12 +179,14 @@ h1 {
     font-weight: 300;
 }
 
+
 .cadastro a{
     font-size: 16px;
     color: aliceblue;
     font-weight: 500;
     text-decoration: none;
 }
+
 
 .cadastro a:hover{
     color: yellowgreen;
