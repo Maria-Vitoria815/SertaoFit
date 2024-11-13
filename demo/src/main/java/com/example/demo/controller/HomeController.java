@@ -16,9 +16,9 @@ public class HomeController {
 		return "home";
 	}
 	
-	@GetMapping("/entrar")
-	public String entrar() {
-		return "entrar";
+	@GetMapping("/login")
+	public String login() {
+		return "login";
 	}
 	
 	@GetMapping("/cadastro")
@@ -49,6 +49,11 @@ public class HomeController {
     @GetMapping("/arquivos")
 	public String arquivos() {
 		return "arquivos";
+	}
+
+	@GetMapping("/perfil2")
+	public String perfil2(){
+		return "perfil2";
 	}
 	
 }
